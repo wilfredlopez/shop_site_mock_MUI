@@ -1,0 +1,116 @@
+import { CategoryData } from "./models/CategoryData";
+import { IProduct } from "./models/IProduct";
+
+export const categories: CategoryData[] = [
+  { slog: "men", text: "Men" },
+  { slog: "men-shoes", text: "Mens Shoes" },
+  { slog: "women", text: "Women" },
+];
+
+export const products: IProduct[] = [
+  {
+    "images": [
+      "https://cdn.pixabay.com/photo/2014/07/31/22/59/man-407095_960_720.jpg",
+    ],
+    "stars": 3,
+    "likes": 10,
+    "tags": [],
+    "_id": "5f0c9bc1dd925e52741ae163",
+    "sku": "5f0c9bc1dd925e52741ae163",
+    "name": "Shirt 1",
+    "category": "Men",
+    "price": 25.99,
+    "description": "Long Shirt white and blue.",
+    "regularPrice": 55.99,
+    "quantity": 1,
+    "currency": "usd",
+    slug: "men",
+    "createdAt": "2020-07-13T17:37:05.737Z",
+    "updatedAt": "2020-07-13T17:38:08.774Z",
+  },
+  {
+    "images": [
+      "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80",
+      "https://images.unsplash.com/photo-1576417677416-6ca3adfb5435?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
+    ],
+    "stars": 5,
+    "likes": 20,
+    "tags": [],
+    "_id": "5f0e4ea6a3085139a8f3833f",
+    "sku": "5f0e4ea6a3085139a8f3833f",
+    "name": "White Shirt",
+    "category": "Men",
+    "price": 10.99,
+    "regularPrice": 20.99,
+    "quantity": 3,
+    "description":
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+    "currency": "usd",
+    slug: "men",
+    "createdAt": "2020-07-15T00:32:38.311Z",
+    "updatedAt": "2020-07-15T00:32:38.311Z",
+  },
+  {
+    "images": [
+      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
+    ],
+    "stars": 1,
+    "likes": 0,
+    "tags": [],
+    "_id": "5f0e4f3ca3085139a8f38340",
+    "sku": "5f0e4f3ca3085139a8f38340",
+    "name": "Nike Red",
+    "category": "Shoes",
+    "price": 37.5,
+    "regularPrice": 80.39,
+    "quantity": 3,
+    "description":
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+    "currency": "usd",
+    slug: "men",
+    "createdAt": "2020-07-15T00:35:08.416Z",
+    "updatedAt": "2020-07-15T00:35:08.416Z",
+  },
+  {
+    "images": [
+      "https://images.unsplash.com/photo-1512374382149-233c42b6a83b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80",
+    ],
+    "stars": 2,
+    "likes": 30,
+    "tags": [],
+    "_id": "5f0e4f63a3085139a8f38341",
+    "sku": "5f0e4f63a3085139a8f38341",
+    "name": "Nike White Tennis",
+    "category": "Shoes",
+    "price": 55.5,
+    "regularPrice": 88.39,
+    "quantity": 6,
+    "description":
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+    "createdAt": "2020-07-15T00:35:47.967Z",
+    "updatedAt": "2020-07-15T00:35:47.967Z",
+    "currency": "usd",
+    slug: "men",
+  },
+  {
+    "images": [
+      "https://images.unsplash.com/photo-1532697057284-bbe526e18cdb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
+    ],
+    "stars": 0,
+    "likes": 0,
+    "tags": [],
+    "_id": "5f0e5011a3085139a8f38342",
+    "sku": "5f0e5011a3085139a8f38342",
+    "name": "Cristal Bag",
+    "category": "Bags",
+    "price": 55.5,
+    "regularPrice": 88.39,
+    "quantity": 6,
+    "description":
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+    "currency": "usd",
+    slug: "men",
+    "createdAt": "2020-07-15T00:38:41.505Z",
+    "updatedAt": "2020-07-15T00:38:41.505Z",
+  },
+];

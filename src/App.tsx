@@ -1,24 +1,49 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {
+  createStyles,
+  makeStyles,
+  Paper,
+  Theme,
+  Toolbar,
+} from "@material-ui/core";
+import React from "react";
+import IndexPage from "./components/IndexPage";
+import Header from "./components/layout/Header";
+
+const useStyles = makeStyles((theme: Theme) =>
+  createStyles({
+    spacingToolbar: {
+      minHeight: 0,
+      marginBottom: theme.spacing(3),
+      [theme.breakpoints.up("md")]: {
+        marginBottom: theme.spacing(4),
+      },
+    },
+    rootPaper: {
+      paddingLeft: 0,
+      paddingRight: 0,
+      paddingBottom: 0,
+      paddingTop: 20,
+      [theme.breakpoints.up("md")]: {
+        paddingLeft: 20,
+        paddingRight: 20,
+        paddingBottom: 20,
+      },
+    },
+  })
+);
 
 function App() {
+  const classes = useStyles();
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Toolbar
+        id="back-to-top-anchor"
+        className={classes.spacingToolbar}
+      />
+      <Paper className={classes.rootPaper} square elevation={0}>
+        <IndexPage />
+      </Paper>
     </div>
   );
 }
